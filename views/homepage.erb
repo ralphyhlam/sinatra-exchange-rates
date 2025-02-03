@@ -1,8 +1,10 @@
 <h1>Currency pairs</h1>
 
-<% @list_currencies.each do |option| %>
-<ul>
-  <li><a href= "/#{option}" >Convert <%= option %> to...</a></li>
-</ul>
 
-<% end %>
+<ul>
+
+  <% @list_currencies.each do |option| %>
+    <li><a href="/<%= option%>">Convert <%= option %> to...</a></li>
+  <% end %>
+
+</ul>

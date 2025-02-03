@@ -1,1 +1,9 @@
 <h1>Convert <%= @choice %></h1>
+
+Go <a href="/">back</a>.
+
+<ul>
+  <% @list_currencies.each do |option| %>
+    <li><a href="/<%= @choice%>/<%= option %>">Convert 1 <%= @choice %> to <%= option %></li>
+  <%end%>
+</ul>
